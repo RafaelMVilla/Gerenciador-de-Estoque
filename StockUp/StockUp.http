@@ -1,4 +1,4 @@
-@StockUp_HostAddress = http://localhost:5063
+@StockUp_HostAddress = http://localhost:5013
 
 GET {{StockUp_HostAddress}}/weatherforecast/
 Accept: application/json
