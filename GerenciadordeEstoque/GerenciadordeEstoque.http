@@ -1,6 +1,0 @@
-@GerenciadordeEstoque_HostAddress = http://localhost:5034
-
-GET {{GerenciadordeEstoque_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
