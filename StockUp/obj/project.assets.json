@@ -1460,19 +1460,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rafael Villa\\.nuget\\packages\\": {}
+    "C:\\Users\\igork\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rafael Villa\\OneDrive\\Área de Trabalho\\Gerenciador-de-Estoque\\StockUp\\StockUp.csproj",
+      "projectUniqueName": "C:\\DEV-WEB-AVANCADO\\Gerenciador-de-Estoque\\StockUp\\StockUp.csproj",
       "projectName": "StockUp",
-      "projectPath": "C:\\Users\\Rafael Villa\\OneDrive\\Área de Trabalho\\Gerenciador-de-Estoque\\StockUp\\StockUp.csproj",
-      "packagesPath": "C:\\Users\\Rafael Villa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rafael Villa\\OneDrive\\Área de Trabalho\\Gerenciador-de-Estoque\\StockUp\\obj\\",
+      "projectPath": "C:\\DEV-WEB-AVANCADO\\Gerenciador-de-Estoque\\StockUp\\StockUp.csproj",
+      "packagesPath": "C:\\Users\\igork\\.nuget\\packages\\",
+      "outputPath": "C:\\DEV-WEB-AVANCADO\\Gerenciador-de-Estoque\\StockUp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Rafael Villa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\igork\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1539,7 +1539,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
