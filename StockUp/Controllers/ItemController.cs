@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using StockUp.Data;
 using StockUp.Models;
 
 namespace StockUp.Controllers
 {
-        [ApiController]
-        [Route("api/[controller]")]
+    [ApiController]
+    [Route("api/[controller]")]
 
     public class ItemController : ControllerBase
     {
@@ -27,10 +28,33 @@ namespace StockUp.Controllers
             {
                 return BadRequest(ModelState);
             }
-            
+
             _appDbcontext.StockUpDB.Add(item);
             await _appDbcontext.SaveChangesAsync();
             return Created("Item criado com sucesso!", item);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Item>>>
+        GetItem()
+        {
+            var itens = await _appDbcontext.StockUpDB.ToListAsync();
+
+            return Ok(itens);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<IEnumerable<Item>>>
+        GetItem(int id)
+        {
+            var item = await _appDbcontext.StockUpDB.FindAsync(id);
+
+            if (item == null)
+            {
+                return NotFound("Dados inválidos!");
+            }
+
+            return Ok(item);
         }
     }
 }
