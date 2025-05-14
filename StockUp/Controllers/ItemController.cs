@@ -21,6 +21,8 @@ namespace StockUp.Controllers
             _appDbcontext = appDbContext;
         }
 
+
+        // CRUD - POST
         [HttpPost]
         public async Task<IActionResult> AddItem([FromBody] Item item)
         {
@@ -34,6 +36,8 @@ namespace StockUp.Controllers
             return Created("Item criado com sucesso!", item);
         }
 
+
+        // CRUD - GET ALL
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Item>>>
         GetItem()
@@ -43,6 +47,8 @@ namespace StockUp.Controllers
             return Ok(itens);
         }
 
+
+        // CRUD - GET BY ID
         [HttpGet("{id}")]
         public async Task<ActionResult<IEnumerable<Item>>>
         GetItem(int id)
@@ -57,6 +63,8 @@ namespace StockUp.Controllers
             return Ok(item);
         }
 
+
+        // CRUD - PUT
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateItem(int id, [FromBody] Item itemAtualizado)
         {
@@ -73,6 +81,8 @@ namespace StockUp.Controllers
             return Ok("Item atualizado com sucesso!");
         }
 
+
+        // CRUD - DELETE
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(int id)
         {
