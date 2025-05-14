@@ -65,11 +65,29 @@ namespace StockUp.Controllers
             {
                 return NotFound("Item não encontrado!");
             }
-            
+
             _appDbcontext.Entry(itemExistente).CurrentValues.SetValues(itemAtualizado);
 
             await _appDbcontext.SaveChangesAsync();
+
             return Ok("Item atualizado com sucesso!");
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteItem(int id)
+        {
+            var item = await _appDbcontext.StockUpDB.FindAsync(id);
+
+            if (item == null)
+            {
+                return NotFound("Item não encontrado!");
+            }
+
+            _appDbcontext.Remove(item);
+
+            await _appDbcontext.SaveChangesAsync();
+
+            return Ok("Item deletado com sucesso!");
         }
     }
 }
