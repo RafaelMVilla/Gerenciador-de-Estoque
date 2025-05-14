@@ -56,5 +56,20 @@ namespace StockUp.Controllers
 
             return Ok(item);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateItem(int id, [FromBody] Item itemAtualizado)
+        {
+            var itemExistente = await _appDbcontext.StockUpDB.FindAsync(id);
+            if (itemExistente == null)
+            {
+                return NotFound("Item não encontrado!");
+            }
+            
+            _appDbcontext.Entry(itemExistente).CurrentValues.SetValues(itemAtualizado);
+
+            await _appDbcontext.SaveChangesAsync();
+            return Ok("Item atualizado com sucesso!");
+        }
     }
 }
