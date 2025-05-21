@@ -74,11 +74,15 @@ namespace StockUp.Controllers
                 return NotFound("Item não encontrado!");
             }
 
-            _appDbcontext.Entry(itemExistente).CurrentValues.SetValues(itemAtualizado);
+            itemExistente.Dispositivo = itemAtualizado.Dispositivo;
+            itemExistente.Marca = itemAtualizado.Marca;
+            itemExistente.Modelo = itemAtualizado.Modelo;
+            itemExistente.Responsavel = itemAtualizado.Responsavel;
+            itemExistente.Local = itemAtualizado.Local;
 
             await _appDbcontext.SaveChangesAsync();
 
-            return Ok("Item atualizado com sucesso!");
+            return Ok(itemAtualizado);
         }
 
 
