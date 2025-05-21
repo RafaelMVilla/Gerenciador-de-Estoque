@@ -2,6 +2,10 @@
 const btnItens = document.getElementById('btn-itens');
 const listaItens = document.getElementById('item-list');
 
+// Constantes responsáveis para buscar um item por Id
+const formBuscar = document.getElementById('form-item-busca');
+const inputBuscarId = document.getElementById('input-item-busca');
+
 // Constantes responsáveis para criar
 const formItem = document.getElementById('form-item-add');
 const inputDispositivo = document.getElementById('input-item-dispositivo');
@@ -13,7 +17,7 @@ const inputLocal = document.getElementById('input-item-local');
 // Constante responsável pela URL da API
 const stockUpURL = "http://localhost:5013/api/Item";
 
-// Constante responsável para pegar todos os itens
+// Método responsável para pegar todos os itens
 const getItens = async () => {
     listaItens.innerHTML = "";
 
@@ -44,7 +48,37 @@ const getItens = async () => {
     }
 }
 
-// Constante responsável por criar um novo item
+// Método responsável por buscar um item pelo ID
+
+const getItemId = async (id) => {
+    listaItens.innerHTML = "";
+
+    try {
+        const response = await fetch(`${stockUpURL}/${id}`,{
+            method: 'GET',
+            headers: {
+                'Content-Type' : 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error("Erro ao buscar o item!");
+            
+        }
+
+        const item = await response.json();
+        const novaLinha = document.createElement("li");
+
+        novaLinha.innerText = `ID: ${item.id} | Dispositivo: ${item.dispositivo} | Marca: ${item.marca} | Modelo: ${item.modelo} | Responsável: ${item.responsavel} | Local: ${item.local}`;
+        listaItens.appendChild(novaLinha);
+    } catch (error) {
+        console.log(error.message);
+        listaItens.innerText = `${error.message}`;
+        alert(error.message);
+    }
+} 
+
+// Método responsável por criar um novo item
 const postItem = async (novoItem) => {
     listaItens.innerHTML = '';
 
@@ -78,6 +112,12 @@ btnItens.addEventListener('click', (e) => {
     e.preventDefault();
     getItens();
 });
+
+// Função para buscar um item pelo ID
+formBuscar.addEventListener('submit', (e) => {
+    e.preventDefault();
+    getItemId(inputBuscarId.value);
+})
 
 // Função para criar um novo item pelo form
 formItem.addEventListener('submit', (e) => {
