@@ -1,4 +1,72 @@
-*{
-    font-family: poppins, sans-serif;
-    
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    color: #333333; /* Cinza escuro */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-itens {
+    background-color: #888888; /* Cinza para listar */
+    color: white;
+}
+
+#form-item-add button {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+
+#form-item-busca button {
+    background-color: #007bff; /* Azul padrão */
+    color: white;
+}
+
+#form-item-alterar button {
+    background-color: #ffc107; /* Laranja/Amarelo */
+    color: white;
+}
+
+#form-delete button {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
