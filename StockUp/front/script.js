@@ -1,6 +1,6 @@
 // Constantes responsáveis para listar todos os itens
 const btnItens = document.getElementById('btn-itens');
-const listaItens = document.getElementById('item-list');
+const tableItens = document.getElementById('item-tbody');
 
 // Constantes responsáveis para buscar um item por Id
 const formBuscar = document.getElementById('form-item-busca');
@@ -17,12 +17,15 @@ const inputLocal = document.getElementById('input-item-local');
 // Constantes responsáveis para alterar o item
 const formItemAlterar = document.getElementById('form-item-alterar');
 
+// Constantes responsáveis para deletar o item
+const formDelete = document.getElementById('form-delete');
+
 // Constante responsável pela URL da API
 const stockUpURL = "http://localhost:5013/api/Item";
 
 // Método responsável para pegar todos os itens
 const getItens = async () => {
-    listaItens.innerHTML = "";
+    tableItens.innerHTML = "";
 
     try {
 
@@ -40,21 +43,26 @@ const getItens = async () => {
         const itens = await response.json();
 
         itens.forEach(item => {
-            const novaLinha = document.createElement("li");
-            novaLinha.innerText = `ID: ${item.id} | Dispositivo: ${item.dispositivo} | Marca: ${item.marca} | Modelo: ${item.modelo} | Responsável: ${item.responsavel} | Local: ${item.local}`;
-            listaItens.appendChild(novaLinha);
+            const novaLinha = document.createElement("tr");
+            novaLinha.innerHTML = `<td>${item.id}</td>
+                <td>${item.dispositivo}</td>
+                <td>${item.marca}</td>
+                <td>${item.modelo}</td>
+                <td>${item.responsavel}</td>
+                <td>${item.local}</td>`;
+            tableItens.appendChild(novaLinha);
         });
         
     } catch (error) {
       console.log(error.message);
-      listaItens.innerText = `${error.message}`;  
+      tableItens.innerText = `<tr><td colspan="6">${error.message}</td></tr>`;
     }
 }
 
 // Método responsável por buscar um item pelo ID
 
 const getItemId = async (id) => {
-    listaItens.innerHTML = "";
+    tableItens.innerHTML = "";
 
     try {
         const response = await fetch(`${stockUpURL}/${id}`,{
@@ -70,20 +78,25 @@ const getItemId = async (id) => {
         }
 
         const item = await response.json();
-        const novaLinha = document.createElement("li");
+        const novaLinha = document.createElement("tr");
 
-        novaLinha.innerText = `ID: ${item.id} | Dispositivo: ${item.dispositivo} | Marca: ${item.marca} | Modelo: ${item.modelo} | Responsável: ${item.responsavel} | Local: ${item.local}`;
-        listaItens.appendChild(novaLinha);
+        novaLinha.innerHTML = `<td>${item.id}</td>
+            <td>${item.dispositivo}</td>
+            <td>${item.marca}</td>
+            <td>${item.modelo}</td>
+            <td>${item.responsavel}</td>
+            <td>${item.local}</td>`;
+        tableItens.appendChild(novaLinha);
     } catch (error) {
         console.log(error.message);
-        listaItens.innerText = `${error.message}`;
+        tableItens.innerText = `<tr><td colspan="6">${error.message}</td></tr>`;
         alert(error.message);
     }
 } 
 
 // Método responsável por criar um novo item
 const postItem = async (novoItem) => {
-    listaItens.innerHTML = '';
+    tableItens.innerHTML = '';
 
     try {
         const response = await fetch(stockUpURL, {
@@ -109,7 +122,7 @@ const postItem = async (novoItem) => {
     }
 }
 
-// Método responsável por alterar item pelo id
+// Método responsável por alterar item pelo ID
 const putItem = async () => {
     const id = document.getElementById('input-item-id-alterado').value;
     const dispositivo = document.getElementById('input-item-dispositivo-alterado').value;
@@ -118,7 +131,7 @@ const putItem = async () => {
     const responsavel = document.getElementById('input-item-responsavel-alterado').value;
     const local = document.getElementById('input-item-local-alterado').value;
     
-    listaItens.innerHTML = '';
+    tableItens.innerHTML = '';
 
     try {
         const response = await fetch(`${stockUpURL}/${id}`, {
@@ -148,6 +161,30 @@ const putItem = async () => {
     }
 }
 
+// Método responsável para deletar o item pelo ID
+const deleteItem = async () => {
+    const id = document.getElementById('input-item-delete').value;
+    tableItens.innerHTML = '';
+
+    try {
+        const response = await fetch(`${stockUpURL}/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error("Erro ao deletar Item!");
+        }
+
+        const aviso = await response.text();
+        alert(aviso);        
+    } catch (error) {
+        alert(error.message);
+    }
+}
+
 
 // Função para listar todos os itens pelo botão "btn-itens"
 btnItens.addEventListener('click', (e) => {
@@ -173,8 +210,14 @@ formItem.addEventListener('submit', (e) => {
     });
 });
 
-// Função para alterar um item pelo id
+// Função para alterar um item pelo ID
 formItemAlterar.addEventListener('submit', (e) => {
     e.preventDefault();
     putItem();
 });
+
+ // Função para Deletar o item pelo ID
+ formDelete.addEventListener('submit', (e) => {
+    e.preventDefault();
+    deleteItem();
+ })

@@ -13,13 +13,24 @@
     <div>
         <h2>Lista de Itens</h2>
         <button id="btn-itens">Listar Itens</button>
-        <ul id="item-list"></ul>
+        <table id="item-table" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Dispositivo</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Responsável</th>
+                    <th>Local</th>
+                </tr>
+            </thead>
+            <tbody id="item-tbody"></tbody>
+        </table>
     </div>
 
     <div>
         <h2>Adicionar Itens</h2>
         <form action="" method="get" id="form-item-add">
-            <h3>Adicionar novo Item</h3>
 
             <input type="text" id="input-item-dispositivo" placeholder="Digite o nome do dispositivo" required>
 
@@ -57,6 +68,13 @@
             <input type="text" id="input-item-local-alterado" placeholder="Digite o novo local do dispositivo" required>
 
             <button type="submit">Alterar item</button>
+        </form>
+    </div>
+    <div>
+        <form action="" method="get" id="form-delete">
+            <h2>Deletar Item</h2>
+            <input type="number" id="input-item-delete" placeholder="Digite o ID do Item">
+            <button type="submit">Deletar</button>
         </form>
     </div>
     <script src="script.js"></script>
