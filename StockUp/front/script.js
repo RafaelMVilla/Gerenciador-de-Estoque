@@ -17,6 +17,9 @@ const inputLocal = document.getElementById('input-item-local');
 // Constantes responsáveis para alterar o item
 const formItemAlterar = document.getElementById('form-item-alterar');
 
+// Constantes responsáveis para deletar o item
+const formDelete = document.getElementById('form-delete');
+
 // Constante responsável pela URL da API
 const stockUpURL = "http://localhost:5013/api/Item";
 
@@ -119,7 +122,7 @@ const postItem = async (novoItem) => {
     }
 }
 
-// Método responsável por alterar item pelo id
+// Método responsável por alterar item pelo ID
 const putItem = async () => {
     const id = document.getElementById('input-item-id-alterado').value;
     const dispositivo = document.getElementById('input-item-dispositivo-alterado').value;
@@ -158,6 +161,30 @@ const putItem = async () => {
     }
 }
 
+// Método responsável para deletar o item pelo ID
+const deleteItem = async () => {
+    const id = document.getElementById('input-item-delete').value;
+    tableItens.innerHTML = '';
+
+    try {
+        const response = await fetch(`${stockUpURL}/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error("Erro ao deletar Item!");
+        }
+
+        const aviso = await response.text();
+        alert(aviso);        
+    } catch (error) {
+        alert(error.message);
+    }
+}
+
 
 // Função para listar todos os itens pelo botão "btn-itens"
 btnItens.addEventListener('click', (e) => {
@@ -183,8 +210,14 @@ formItem.addEventListener('submit', (e) => {
     });
 });
 
-// Função para alterar um item pelo id
+// Função para alterar um item pelo ID
 formItemAlterar.addEventListener('submit', (e) => {
     e.preventDefault();
     putItem();
 });
+
+ // Função para Deletar o item pelo ID
+ formDelete.addEventListener('submit', (e) => {
+    e.preventDefault();
+    deleteItem();
+ })
