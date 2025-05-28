@@ -1,0 +1,86 @@
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\appsettings.Development.json
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\appsettings.json
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.exe
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.deps.json
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.runtimeconfig.json
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.pdb
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Humanizer.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\MySqlConnector.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\System.CodeDom.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.csproj.AssemblyReference.cache
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.AssemblyInfoInputs.cache
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.AssemblyInfo.cs
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.csproj.CoreCompileInputs.cache
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.MvcApplicationPartsAssemblyInfo.cs
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.MvcApplicationPartsAssemblyInfo.cache
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.sourcelink.json
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets.build.json
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets.development.json
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets\msbuild.StockUp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets\msbuild.build.StockUp.props
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StockUp.props
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StockUp.props
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\scopedcss\bundle\StockUp.styles.css
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.csproj.Up2Date
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\refint\StockUp.dll
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.pdb
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.genruntimeconfig.cache
+C:\DEV-WEB-AVANCADO\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\ref\StockUp.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\appsettings.json
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.exe
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.deps.json
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.runtimeconfig.json
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\StockUp.pdb
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.csproj.AssemblyReference.cache
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.AssemblyInfoInputs.cache
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.AssemblyInfo.cs
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.csproj.CoreCompileInputs.cache
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.sourcelink.json
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets\msbuild.StockUp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets\msbuild.build.StockUp.props
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StockUp.props
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StockUp.props
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\scopedcss\bundle\StockUp.styles.css
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.csproj.Up2Date
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\refint\StockUp.dll
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.pdb
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\StockUp.genruntimeconfig.cache
+C:\Users\Rafael Villa\OneDrive\Área de Trabalho\Gerenciador-de-Estoque\StockUp\obj\Debug\net8.0\ref\StockUp.dll
