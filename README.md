@@ -30,6 +30,7 @@ Pré-requisitos
 - .NET SDK 8.0+
 - MySQL instalado
 - Git instalado
+- Live Server instalado
 
 # Passos:
 # 1. Clone o repositório
@@ -42,4 +43,7 @@ cd GerenciadordeEstoque
 dotnet restore
 
 # 4. Execute a aplicação
-dotnet run
+dotnet run --project StockUp
+
+# 5. Execute o live server
+Clique em Go Live
